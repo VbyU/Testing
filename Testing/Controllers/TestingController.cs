@@ -52,5 +52,24 @@ namespace Testing.Controllers
             }
             
         }
+
+        [AllowAnonymous]
+        [HttpPost]
+        [Route("api/testing2")]
+        public IHttpActionResult testing2()
+        {
+            cinema[] data = new cinema[2];
+            data[0] = new cinema();
+            data[0].title = "testing";
+            data[0].genre = "testing2";
+            data[0].duration = "testing3";
+            data[0].director = "testing4";
+            data[1] = new cinema();
+            data[2].title = "testing";
+            data[3].genre = "testing2";
+            data[4].duration = "testing3";
+            data[5].director = "testing4";
+            return Json(data);
+        }
     }
 }
