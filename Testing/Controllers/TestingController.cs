@@ -65,10 +65,10 @@ namespace Testing.Controllers
             data[0].duration = "testing3";
             data[0].director = "testing4";
             data[1] = new cinema();
-            data[2].title = "testing";
-            data[3].genre = "testing2";
-            data[4].duration = "testing3";
-            data[5].director = "testing4";
+            data[1].title = "testing";
+            data[1].genre = "testing2";
+            data[1].duration = "testing3";
+            data[1].director = "testing4";
             return Json(data);
         }
     }
