@@ -13,7 +13,7 @@ namespace Testing.Controllers
 {
     public class TestingController : ApiController
     {
-asdasdasdasds
+
         [AllowAnonymous]
         [HttpPost]
         [Route("api/testing")]
