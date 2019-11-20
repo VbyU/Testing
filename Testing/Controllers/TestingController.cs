@@ -58,7 +58,7 @@ namespace Testing.Controllers
         [Route("api/testing2")]
         public IHttpActionResult testing2()
         {
-            cinema[] data = new cinema[2];
+            cinema[] data = new cinema[3];
             data[0] = new cinema();
             data[0].title = "testing";
             data[0].genre = "testing2";
@@ -69,6 +69,11 @@ namespace Testing.Controllers
             data[1].genre = "testing2";
             data[1].duration = "testing3";
             data[1].director = "testing4";
+            data[2] = new cinema();
+            data[2].title = "teasdsting";
+            data[2].genre = "testasding2";
+            data[2].duration = "tesasdating3";
+            data[2].director = "tesasdting4";
             return Json(data);
         }
     }
